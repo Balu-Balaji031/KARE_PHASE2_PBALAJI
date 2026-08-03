@@ -1,0 +1,103 @@
+\\ n = 5
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj = new Scanner(System.in);
+	    int n = obj.nextInt();
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	            if(i==0 || i==n-1 || j==0 || j==n-1){
+	                System.out.print("*");
+	            }
+	            else {
+	                System.out.print(" ");
+	        }
+	    }
+		System.out.println("");
+	}
+}
+}
+
+
+
+// n = 5
+//10101
+  01010
+  10101
+  01010
+  10101
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj = new Scanner(System.in);
+	    int n = obj.nextInt();
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	           if((i+j)%2==0){
+	               System.out.print("1");
+	           }
+	           else{
+	               System.out.print("0");
+	           }
+	        }
+	        System.out.println(" ");
+	    }
+	}
+}
+
+// n = 5
+//ccccc
+  c
+  c
+  c
+  ccccc
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj = new Scanner(System.in);
+	    int n = obj.nextInt();
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	            if(i==0 || i==n-1 || j==0){
+	                System.out.print("C");
+	            }
+	            else {
+	                System.out.print(" ");
+	        }
+	    }
+		System.out.println("");
+	}
+}
+}
+
+// n = 4
+//hollow square with diognals
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner obj = new Scanner(System.in);
+	    int n = obj.nextInt();
+	    n = 2*n-1;
+	    for(int i=0;i<n;i++){
+	        for(int j=0;j<n;j++){
+	            if(i==0 || i==n-1 || j==0 || j==n-1 || i==j || i+j==n-1){
+	                System.out.print("*");
+	            }
+	            else {
+	                System.out.print(" ");
+	        }
+	    }
+		System.out.println(" ");
+	}
+}
+}
