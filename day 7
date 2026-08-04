@@ -1,0 +1,152 @@
+/**
+Strong Number*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();//n=145;
+		int temp=n;
+		int d;
+		int fact=1,sum=0;
+		while(n!=0){
+		    fact=1;
+		    d=n%10;
+		    for(int i=1;i<=d;i++){
+		        fact=fact*i;
+		    }
+		    sum+=fact;
+		    n=n/10;
+		}if(temp==sum){
+		    System.out.print("Strong NUmber: "+sum);
+		}else{
+		    System.out.print("not  a strong number: "+sum);
+		}
+		
+	}
+}
+40585
+Strong NUmber: 40585
+
+/*
+Armstrong Number
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+	    //count digits
+	    int temp=n;
+	    int count=0,d;
+	    while(n!=0){
+	        d=n%10;
+	        count++;
+	        n=n/10;
+	    }
+	    n=temp;
+	    int sum=0;
+	    while(n!=0){
+	        d=n%10;//for every iteration new d value which is at last
+	        sum=sum+(int)Math.pow(d,count);
+	        n=n/10;
+	    }
+	    if(temp==sum){
+	        System.out.print("Armstrong number: "+sum);
+	    }else{
+	        System.out.print("Not a Armstrong number: "+sum);
+	    }
+	}
+}
+1634
+Armstrong number: 1634
+
+//amicable pair
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        int n1=sc.nextInt();
+        System.out.print("Enter second number: ");
+        int n2=sc.nextInt();
+        int n1sum=0;
+        for(int i=1;i<=n1/2;i++){
+            if(n1%i==0){
+                n1sum+=i;
+            }
+        }
+        int n2sum=0;
+        for(int i=1;i<=n2/2;i++){
+            if(n2%i==0){
+                n2sum+=i;
+            }
+        }
+        if(n1sum==n2 && n2sum==n1){
+            System.out.print(n1+" & "+n1+" amicable number ");
+        }else{
+            System.out.print(n1+" & "+n1+" not an amicable number ");
+        }
+    }
+}
+Enter first number: 1184
+Enter second number: 1210
+1184 & 1184amicable number 
+
+//amicable pair
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter  number: ");
+        int n=sc.nextInt();
+        int flag=0;
+        if(n==1){
+            System.out.print("Neither prime not a composite");
+            return;
+        }
+        int count=0;
+        for(int i=2;i<=n/2;i++){
+            if(n%i==0){
+            count++;
+            flag=1;
+            System.out.print("Not a prime number:");
+            return;
+            }
+        }
+        if(flag==0){
+            System.out.print("prime");
+        }
+        //amicable pair
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter  number: ");
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        int count=0,i;
+        for(int j=n1;j<=n2;j++){
+            count=0;
+            for(i=2;i<=n1/2;i++){
+                if(j%i==0){
+                    count++;
+                    break;
+                }
+            }
+            if(count==0){
+                System.out.print(j+" ");
+            }
+        }
+        
+    }
+}
+Enter  number: 5
+10
+5 7 9 
+    }
+}
+
+Enter  number: 97
+prime
