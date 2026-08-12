@@ -1,0 +1,335 @@
+inheritance concept using extends keyword
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        //single inheritance
+        //multi inheritance
+        //hybrid inheritance
+        //lets take three classes
+        Son sn = new Son();
+        sn.gen1();
+        sn.gen2();
+        sn.gen3();
+        Father fa = new Father();
+        fa.gen1();
+        fa.gen2();
+        Grandfather gf=new Grandfather();
+       gf.gen1();
+        
+	}
+	 //father
+	 static class Grandfather{
+	     void gen1(){
+	         System.out.print("Money\n");
+	     }
+	 }
+	static class Father extends Grandfather{
+	    void gen2(){
+	        System.out.print("Gold\n");
+	    }
+	}
+	static class Son extends Father{
+	    void gen3(){
+	        System.out.print("Diamond\n");
+	    }
+	}
+}
+
+outpt:
+Money
+Gold
+Diamond
+Money
+Gold
+Money
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        //single inheritance
+        //multi inheritance
+        //hybrid inheritance
+        //lets take three classes
+        Son sn = new Son();
+        sn.gen31();
+        sn.gen2();
+        Daughter Dh=new Daughter();
+        Dh.gen2();
+        Dh.gen3();
+        Father Fa=new Father();
+        Fa.gen2();
+        
+	}
+	 //father
+	 static class Father{
+	     void gen2(){//we can have a same method in separate classes
+	         System.out.print("Gold");
+	     }
+	 }
+	static class Son extends Father{
+	    void gen31(){
+	        System.out.print("Diamond\n");
+	    }
+	}
+	static class Daughter extends Father{
+	    void gen3(){
+	        System.out.print("Platinum\n");
+	    }
+	}
+}
+
+Diamond
+GoldGoldPlatinum
+Gold
+
+import java.util.*;
+class GrandFather{
+    void gen1(){
+        System.out.print("Money\n");
+    }
+}
+class Father extends GrandFather{
+    void gen21(){
+        System.out.print("GOld\n");
+    }
+}
+class Mother extends Father{
+    void gen22(){
+        System.out.print("Silver\n");
+    }
+}
+class Son extends Father{
+    void gen3(){
+        System.out.print("Diamond\n");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+        Son s= new Son();
+        s.gen1();
+        s.gen21();
+        s.gen3();
+        Mother m=new Mother();
+        m.gen22();
+	}
+}
+
+Money
+GOld
+Diamond
+Silver
+
+//Wjp to check a specific number is perfect square of not by using function with no argument no return type
+import java.util.*;
+public class Main
+{
+    
+    static void ps(){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int flag=0,i;
+        for(i=1;i<=n/2;i++){
+            if(i*i==n){
+                flag=1;
+                System.out.print("Perfect Number");
+                break;
+            }
+            }
+            if(flag==0){
+                System.out.print("Not a perfect square");
+        }
+    }
+	public static void main(String[] args) {
+    
+    ps();
+	}
+}
+outpuy:
+9
+Perfect Number
+
+
+//Wjp to check a number is power of 2 or not 
+//with parameter and no return type
+
+import java.util.*;
+public class Main
+{
+    
+    static void powerof2(int a){//variable name can be changed what ever we want but datatype must be same
+        while(a%2==0){
+            a=a/2;
+        }
+        if(a==1){
+            System.out.println("Its a power of 2");
+        }else{
+            System.out.println("Not a power of 2");
+        }
+        
+    }
+	public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    //int n=sc.nextInt();//if we want we pass by user input
+    powerof2(4);
+    powerof2(8);
+    powerof2(16);
+    powerof2(89);
+    
+	}
+}
+/*
+2^0=1
+2^1=2 2/2=1
+2^3 =8 8/2=4 4/2=2 2/2=1
+2^4 =16 16/2=8 8/2=4 4/2=2 2/2=1
+at last remainder should be always 1;
+*/
+Its a power of 2
+Its a power of 2
+Its a power of 2
+Not a power of 2
+
+/*//automorphic number
+get input user n=5;
+find square of value
+to count number of digits
+to find power of the value pow(value,power value)
+square%power==n then this is automorphic number 
+else not a automorphic number 
+*/
+import java.util.*;
+public class Main
+{
+    boolean  Automorphic(){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int squ=n*n;
+        int temp=n;
+        int count=0;
+        while(n!=0){
+            n=n/10;
+            count++;
+            
+        }int pow=(int)Math.pow(10,count);
+        if(squ%pow==temp){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+	public static void main(String[] args) {
+    Main n=new Main();
+    boolean ans=n.Automorphic();
+    if(ans){
+        System.out.print("Automorphic number");
+        return;
+    }
+    System.out.print("Not an Automorphic number");
+	}
+}
+output:
+8
+Not an Automorphic number
+
+/*
+WJP to checkperfect cube or not 
+*/
+import java.util.*;
+ 
+    
+public class Main{
+    boolean  perfectcube(int n){
+        for(int i=0;i<=n/2;i++){
+            if(i*i*i==n){
+                return true;
+            }
+        }
+       return false;
+        }
+       
+	public static void main(String[] args) {
+    Main n=new Main();
+    Scanner sc=new Scanner(System.in);
+    int m=sc.nextInt();
+    boolean ans=n.perfectcube(m);
+    if(ans){
+        System.out.print("Perfect cube");
+    }else{
+        System.out.print("Not a perfect number");
+    }
+    }
+}
+output:
+13
+Not a perfect number
+
+/*find average for only the values
+even and divisble by 3
+5
+2 4 6 18 24
+*/
+import java.util.*;
+ 
+    
+public class Main{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.print("Size of array: ");
+        int n=sc.nextInt();
+        System.out.print("Enter elements");
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        int sum=0;
+        int count=0;
+        for(int i=0;i<n;i++){
+            if(arr[i]%3==0 && arr[i]%2==0){
+                count++;
+                sum+=arr[i];
+            }
+        }
+        System.out.print("The sum of number both divisible by 3 and even number is ");
+        float average=sum/count;
+        System.out.printf("%.2f",average);
+        
+        
+    }
+}
+Size of array: 5
+Enter elements2 4 6 18 24
+The sum of number both divisible by 3 and even number is 16.00
+
+/*
+find the power of given number without inbuilt method 
+function with parameters and and return Type
+*/
+import java.util.*;
+ 
+    
+public class Main{
+    int powerofn(int num,int pow){
+        int sum=1;
+        for(int i=1;i<=pow;i++){
+	        sum*=num;
+	    }
+	    return sum;
+    }
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int num=sc.nextInt();
+	    int pow=sc.nextInt();
+	    Main m=new Main();
+	    int ans=m.powerofn(num,pow);
+	    System.out.print(ans);
+    }
+    
+}
+
+2
+3
+8
