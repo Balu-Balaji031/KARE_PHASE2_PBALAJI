@@ -1,0 +1,495 @@
+//2d array input print
+import java.util.*;
+public class Matrix2d{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of rows: ");
+        int r=sc.nextInt();
+        System.out.print("ENter no.of columns: ");
+        int c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+
+    }
+}
+//sum of 2d array elemnts
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of rows: ");
+        int r=sc.nextInt();
+        System.out.print("ENter no.of columns: ");
+        int c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }int sum=0;
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                sum=sum+arr[i][j];
+            }
+        }
+        System.out.print("Sum of array elements is: "+sum);
+    }
+}
+Enter no.of rows: 3
+ENter no.of columns: 3
+1
+2
+3
+4
+5
+6
+7
+8
+0
+Sum of array elements is: 36
+//print only diagonal
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter no.of sqaure diagonal n value : ");
+        int n=sc.nextInt();
+        int arr[][]=new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i][i]);    
+        }
+        System.out.println();
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i][n-1-i]);
+        }
+    }
+}
+Enter no.of sqaure diagonal n value : 3
+1 2 3
+4 5 6
+7 8 9
+159
+357
+//transpose 
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter rows value : ");
+        int r=sc.nextInt();
+        System.out.println("Enter colms value : ");
+        int c=sc.nextInt();
+        int arr[][]=new int[r][c];
+        int trans[][]=new int[c][r];
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<c;i++){
+            for(int j=0;j<r;j++){
+                trans[i][j]=arr[j][i];
+            }
+        }
+        System.out.println("Transpose of a Matrix:");
+        for(int i=0;i<c;i++){
+            for(int j=0;j<r;j++){
+                System.out.print(trans[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
+Enter rows value : 
+3
+Enter colms value : 
+3
+1 2 3
+1 2 4 5 6
+6 7 8 9
+Transpose of a Matrix:
+1 4 7 
+2 5 8 
+3 6 9 
+
+/*
+lengh of a string without a inbuilt method
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int count=0;
+        for(char ch:s.toCharArray()){
+            count++;
+        }
+        System.out.print(count);
+	}
+}
+
+gouse
+5
+
+/*
+how many words are there in sentences
+//logic get to know about spaces then +1 for count 
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        int count=0;
+        for(char ch:s.toCharArray()){
+            if(ch==' '){
+                count++;
+            }
+        }
+        System.out.print(count+1);
+	}
+}
+
+hello every body welcome to my party
+7
+
+/*
+WJP to find the vowels count and consonents
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine().toUpperCase();
+        int count=0,conso=0;
+        for(char ch:s.toCharArray()){
+            if(ch== 'A'|| ch== 'E' || ch== 'I' ||ch== 'O' || ch== 'U'){
+                count++;
+            }else{
+                conso++;
+            }
+        }
+        System.out.print("vowel count"+count+"\n"+"consonents"+conso);
+	}
+}
+
+aeiouxyzpre
+vowel count5
+consonents6
+
+/*
+WJP to rverse a string
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        char ch[]=str.toCharArray();
+        int s=0;
+        int e=ch.length -1;
+        while(s<e){
+            char temp=ch[s];
+            ch[s]=ch[e];
+            ch[e]=temp;
+            s++;
+            e--;
+        }
+        System.out.print(new String(ch));
+	}
+}
+
+poooop
+Palindrome :poooop
+/*
+palindrome
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    String str=sc.nextLine();
+    String rev="";
+    for(int i=str.length()-1;i>=0;i--){
+        rev+=str.charAt(i);
+    }
+    if(str.equals(rev)){
+        System.out.print("Palindrome :"+str);
+    }else{
+        System.out.print("Not a Palindrome "+str);
+    }
+    }
+}
+Palindrome :poooop
+
+/*
+print A to z 
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    for(int ch='A';ch<='z';ch++){
+        System.out.print(ch+"->"+(char)ch+"\n");
+        }
+    }
+}
+
+65->A
+66->B
+67->C
+68->D
+69->E
+70->F
+71->G
+72->H
+73->I
+74->J
+75->K
+76->L
+77->M
+78->N
+79->O
+80->P
+81->Q
+82->R
+83->S
+84->T
+85->U
+86->V
+87->W
+88->X
+89->Y
+90->Z
+91->[
+92->\
+93->]
+94->^
+95->_
+96->`
+97->a
+98->b
+99->c
+100->d
+101->e
+102->f
+103->g
+104->h
+105->i
+106->j
+107->k
+108->l
+109->m
+110->n
+111->o
+112->p
+113->q
+114->r
+115->s
+116->t
+117->u
+118->v
+119->w
+120->x
+121->y
+122->z
+
+/*
+
+*/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    char ch=sc.next().charAt(0);
+    if(ch>='A' && ch<='Z'){
+        System.out.print("upper case");
+    }else if(ch>='a' && ch<='z'){
+        System.out.print("Lower case");
+    }else if(ch>='0' && ch<='9'){
+        System.out.print("Number");
+	}else{
+	    System.out.print("Special character ");
+	}
+	}
+}
+//unique elements count
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        int arr[]=new int[256];
+        int c=0;
+        for(char nums:str.toCharArray()){
+            arr[nums]++;
+        }
+        int count=0;
+        for(int i=0;i<256;i++){
+            if(arr[i]==1){
+                count++;
+            }
+	    }
+	    System.out.print(count);
+    }
+}
+apple
+3 unique values
+
+//duplicate  elements
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        int arr[]=new int[256];
+        int c=0;
+        for(char nums:str.toCharArray()){
+            arr[nums]++;
+        }
+        int count=0;
+        for(int i=0;i<256;i++){
+            if(arr[i]>1){
+                count++;
+            }
+	    }
+	    System.out.print(count);
+    }
+}
+
+apple
+1
+//character occured twice  elements
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        int arr[]=new int[256];
+        int c=0;
+        for(char ch:str.toCharArray()){
+            arr[ch]++;
+        }
+        int count=0;
+        for(int i=0;i<256;i++){
+            if(arr[i]==2){
+                System.out.print((char)i+" ");
+            }
+	    }
+	}
+}
+apple
+p is occure twice
+
+
+//frequency of characters
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        int arr[]=new int[256];
+        int c=0;
+        for(char ch:str.toCharArray()){
+            arr[ch]++;
+        }
+        int count=0;
+        for(int i=0;i<256;i++){
+            if(arr[i]>0){
+                System.out.println((char)i+" "+arr[i]);
+            }
+	    }
+	}
+}
+
+banana
+a 3
+b 1
+n 2
+//binary search
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the size of array: ");
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("Enter the target value :");
+        int target=sc.nextInt();
+        int low=0;
+        int high=arr.length-1;
+        while(low<=high){
+            int mid=low+(high-low)/2;
+            if(arr[mid]==target){
+                System.out.print("Target found at index "+mid);
+                return;
+            }else if(target>arr[mid]){
+                low=mid+1;
+            }else{
+                high=mid-1;
+            }
+        }
+        System.out.print("element not found in array");
+	}
+}
+
+Enter the size of array: 10
+1 2 3 4 5 6 7 8 9 99
+Enter the target value :99
+Target found at index 9
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String str1=sc.nextLine();
+        //String str2=sc.nextLine();
+        HashMap<Character,Integer>map1=new HashMap<>();
+        HashMap<Character,Integer>map2=new HashMap<>();
+        for(char ch:str1.toCharArray()){
+            map1.put(ch,map1.getOrDefault(ch,0)+1);
+        }
+        for(char ch:map1.keySet()){
+            if(map1.get(ch)==1)
+            System.out.print(ch);
+        }
+         for(Integer ch:map1.values()){
+            System.out.print(ch);
+        }
+	}
+}
+anagram
+rgmn31111
