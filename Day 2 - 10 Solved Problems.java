@@ -1,14 +1,22 @@
+// DAY 2 - CONDITIONAL STATEMENTS
+// 10 separate Java programs
 import java.util.*;
-public class Day2Solved{
- static void sign(int n){System.out.println(n>0?"Positive":n<0?"Negative":"Zero");}
- static void max2(int a,int b){System.out.println(Math.max(a,b));}
- static void max3(int a,int b,int c){System.out.println(Math.max(a,Math.max(b,c)));}
- static void vowel(char c){c=Character.toLowerCase(c);System.out.println("aeiou".indexOf(c)>=0?"Vowel":"Consonant");}
- static void type(char c){System.out.println(Character.isUpperCase(c)?"Uppercase":Character.isLowerCase(c)?"Lowercase":Character.isDigit(c)?"Digit":"Special");}
- static void age(int a){System.out.println(a>=18?"Eligible":"Not Eligible");}
- static void grade(int m){System.out.println(m>=90?'A':m>=80?'B':m>=70?'C':m>=60?'D':'F');}
- static void triangle(int a,int b,int c){System.out.println(a+b>c&&a+c>b&&b+c>a?"Valid":"Invalid");}
- static void div35(int n){System.out.println(n%3==0&&n%5==0?"Divisible":"Not Divisible");}
- static void leap(int y){System.out.println(y%400==0||y%4==0&&y%100!=0?"Leap":"Not Leap");}
- public static void main(String[]x){sign(-5);max2(4,9);max3(3,8,5);vowel('E');type('7');age(20);grade(85);triangle(3,4,5);div35(30);leap(2028);}
-}
+class Problem1{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();System.out.print(n>0?"Positive":n<0?"Negative":"Zero");}}
+import java.util.*;
+class Problem2{public static void main(String[]a){Scanner s=new Scanner(System.in);int x=s.nextInt(),y=s.nextInt();System.out.print(x>y?x:y);}}
+import java.util.*;
+class Problem3{public static void main(String[]a){Scanner s=new Scanner(System.in);int x=s.nextInt(),y=s.nextInt(),z=s.nextInt();System.out.print(Math.max(x,Math.max(y,z)));}}
+import java.util.*;
+class Problem4{public static void main(String[]a){Scanner s=new Scanner(System.in);char c=s.next().charAt(0);c=Character.toLowerCase(c);System.out.print("aeiou".indexOf(c)>=0?"Vowel":"Consonant");}}
+import java.util.*;
+class Problem5{public static void main(String[]a){Scanner s=new Scanner(System.in);char c=s.next().charAt(0);System.out.print(Character.isUpperCase(c)?"Uppercase":Character.isLowerCase(c)?"Lowercase":Character.isDigit(c)?"Digit":"Special");}}
+import java.util.*;
+class Problem6{public static void main(String[]a){Scanner s=new Scanner(System.in);int age=s.nextInt();System.out.print(age>=18?"Eligible":"Not Eligible");}}
+import java.util.*;
+class Problem7{public static void main(String[]a){Scanner s=new Scanner(System.in);int m=s.nextInt();System.out.print(m>=90?'A':m>=80?'B':m>=70?'C':m>=60?'D':'F');}}
+import java.util.*;
+class Problem8{public static void main(String[]a){Scanner s=new Scanner(System.in);int x=s.nextInt(),y=s.nextInt(),z=s.nextInt();System.out.print(x+y>z&&x+z>y&&y+z>x?"Valid":"Invalid");}}
+import java.util.*;
+class Problem9{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();System.out.print(n%3==0&&n%5==0?"Divisible":"Not Divisible");}}
+import java.util.*;
+class Problem10{public static void main(String[]a){Scanner s=new Scanner(System.in);int y=s.nextInt();System.out.print(y%400==0||y%4==0&&y%100!=0?"Leap Year":"Not Leap Year");}}
