@@ -1,0 +1,12 @@
+// DAY 13 - ARRAY MANIPULATION
+import java.util.*;
+class Problem1{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt(),m=Integer.MIN_VALUE;for(int i=0;i<n;i++)m=Math.max(m,s.nextInt());System.out.print(m);}}
+class Problem2{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt(),m=Integer.MIN_VALUE,z=Integer.MIN_VALUE;for(int i=0;i<n;i++){int x=s.nextInt();if(x>m){z=m;m=x;}else if(x>z&&x!=m)z=x;}System.out.print(z);}}
+class Problem3{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]x=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();int t=x[0];for(int i=0;i<n-1;i++)x[i]=x[i+1];x[n-1]=t;System.out.println(Arrays.toString(x));}}
+class Problem4{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]x=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();int t=x[n-1];for(int i=n-1;i>0;i--)x[i]=x[i-1];x[0]=t;System.out.println(Arrays.toString(x));}}
+class Problem5{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();for(int i=0;i<n;i++){int x=s.nextInt();if(x%2==0)System.out.print(x+" ");} }}
+class Problem6{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]x=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();for(int v:x){int c=0;for(int y:x)if(v==y)c++;if(c==1)System.out.print(v+" ");}}}
+class Problem7{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt(),sum=0;for(int i=0;i<n;i++){sum+=s.nextInt();System.out.print(sum+" ");}}}
+class Problem8{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt(),k=s.nextInt();int[]x=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();k%=n;for(int q=0;q<k;q++){int t=x[n-1];for(int i=n-1;i>0;i--)x[i]=x[i-1];x[0]=t;}System.out.println(Arrays.toString(x));}}
+class Problem9{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]x=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();for(int v:x){int c=0;for(int y:x)if(v==y)c++;if(c>n/2){System.out.print(v);return;}}System.out.print(-1);}}
+class Problem10{public static void main(String[]a){Scanner s=new Scanner(System.in);int n=s.nextInt();int[]x=new int[n];for(int i=0;i<n;i++)x[i]=s.nextInt();for(int i=0;i<n;i++)for(int j=i+1;j<n;j++)if(x[i]>x[j]){int t=x[i];x[i]=x[j];x[j]=t;}System.out.println(Arrays.toString(x));}}
