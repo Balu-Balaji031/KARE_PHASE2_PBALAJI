@@ -1,0 +1,11 @@
+// DAY 12 - INHERITANCE AND CONSTRUCTORS
+class Problem1{static class A{void show(){System.out.println("A");}}static class B extends A{void showB(){System.out.println("B");}}public static void main(String[]x){B b=new B();b.show();b.showB();}}
+class Problem2{static class Animal{void sound(){System.out.println("Animal");}}static class Dog extends Animal{void bark(){System.out.println("Bark");}}public static void main(String[]x){Dog d=new Dog();d.sound();d.bark();}}
+class Problem3{static class Person{String name;Person(){name="Unknown";}Person(String n){name=n;}public static void main(String[]x){System.out.println(new Person().name);System.out.println(new Person("Balaji").name);}}}
+class Problem4{static class Box{int x;Box(){x=0;}Box(int x){this.x=x;}public static void main(String[]x){System.out.println(new Box().x);System.out.println(new Box(10).x);}}}
+class Problem5{static class Student{int r;String n;Student(int r,String n){this.r=r;this.n=n;}Student(Student s){r=s.r;n=s.n;}void show(){System.out.println(r+" "+n);}public static void main(String[]x){Student a=new Student(1,"A"),b=new Student(a);b.show();}}}
+class Problem6{static class A{void show(){System.out.println("Parent");}}static class B extends A{void show(){System.out.println("Child");}}public static void main(String[]x){A a=new B();a.show();}}
+class Problem7{static class Shape{void area(){System.out.println("Shape");}}static class Circle extends Shape{void area(){System.out.println(3.14*5*5);}}public static void main(String[]x){new Circle().area();}}
+class Problem8{static class A{int x;A(int x){this.x=x;}}static class B extends A{B(int x){super(x);}public static void main(String[]x){System.out.println(new B(25).x);}}}
+class Problem9{static class Grand{void g(){System.out.println("Grand");}}static class Parent extends Grand{void p(){System.out.println("Parent");}}static class Child extends Parent{void c(){System.out.println("Child");}}public static void main(String[]x){Child c=new Child();c.g();c.p();c.c();}}
+class Problem10{static class Calculator{int add(int a,int b){return a+b;}int add(int a,int b,int c){return a+b+c;}public static void main(String[]x){Calculator c=new Calculator();System.out.println(c.add(2,3));System.out.println(c.add(2,3,4));}}}
