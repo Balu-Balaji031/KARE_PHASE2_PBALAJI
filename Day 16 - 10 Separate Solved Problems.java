@@ -1,0 +1,12 @@
+// DAY 16 - GRAPHS
+import java.util.*;
+class Problem1{public static void main(String[]x){int[][]e={{0,1},{1,2},{2,3}};for(int[]q:e)System.out.println(q[0]+" - "+q[1]);}}
+class Problem2{public static void main(String[]x){int V=4;int[][]a=new int[V][V];int[][]e={{0,1},{1,2},{2,3}};for(int[]q:e)a[q[0]][q[1]]=a[q[1]][q[0]]=1;for(int[]r:a)System.out.println(Arrays.toString(r));}}
+class Problem3{public static void main(String[]x){int[][]e={{0,1},{0,2},{1,3}};List<Integer>[]g=new ArrayList[4];for(int i=0;i<4;i++)g[i]=new ArrayList<>();for(int[]q:e){g[q[0]].add(q[1]);g[q[1]].add(q[0]);}System.out.println(g[0]);}}
+class Problem4{public static void main(String[]x){List<Integer>[]g=new ArrayList[5];for(int i=0;i<5;i++)g[i]=new ArrayList<>();g[0].add(1);g[1].add(0);g[1].add(2);g[2].add(1);boolean[]v=new boolean[5];Queue<Integer>q=new LinkedList<>();q.add(0);v[0]=true;while(!q.isEmpty()){int u=q.poll();System.out.print(u+" ");for(int z:g[u])if(!v[z]){v[z]=true;q.add(z);}}}}
+class Problem5{static void dfs(List<Integer>[]g,int u,boolean[]v){v[u]=true;System.out.print(u+" ");for(int z:g[u])if(!v[z])dfs(g,z,v);}public static void main(String[]x){List<Integer>[]g=new ArrayList[4];for(int i=0;i<4;i++)g[i]=new ArrayList<>();g[0].add(1);g[1].add(2);g[2].add(3);dfs(g,0,new boolean[4]);}}
+class Problem6{public static void main(String[]x){int[][]e={{0,1},{0,2},{1,3}};int[]d=new int[4];for(int[]q:e){d[q[0]]++;d[q[1]]++;}System.out.println(Arrays.toString(d));}}
+class Problem7{public static void main(String[]x){int[][]e={{0,1},{1,2},{2,3}};System.out.print(e.length);}}
+class Problem8{public static void main(String[]x){int[][]e={{0,1},{1,2},{2,3}};boolean[]v=new boolean[4];Queue<Integer>q=new LinkedList<>();q.add(0);v[0]=true;while(!q.isEmpty()){int u=q.poll();for(int[]z:e)if(z[0]==u&&!v[z[1]]){v[z[1]]=true;q.add(z[1]);}else if(z[1]==u&&!v[z[0]]){v[z[0]]=true;q.add(z[0]);}}boolean ok=true;for(boolean b:v)ok&=b;System.out.print(ok);}}
+class Problem9{public static void main(String[]x){int[][]e={{0,0},{0,1},{1,2}};boolean loop=false;for(int[]q:e)if(q[0]==q[1])loop=true;System.out.print(loop);}}
+class Problem10{public static void main(String[]x){int[][]e={{0,1},{1,2},{0,2},{2,3}};boolean[]v=new boolean[4];int[]p=new int[4];Arrays.fill(p,-1);Queue<Integer>q=new LinkedList<>();q.add(0);v[0]=true;while(!q.isEmpty()){int u=q.poll();for(int[]z:e){int w=z[0]==u?z[1]:z[1]==u?z[0]:-1;if(w>=0&&!v[w]){v[w]=true;p[w]=u;q.add(w);}}}System.out.print(p[3]);}}
