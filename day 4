@@ -718,3 +718,18 @@ public class Main{
 *--------*
 *--------*
 **********
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Print a solid square pattern of stars.
+// 2. Print a left-aligned increasing triangle.
+// 3. Print a left-aligned decreasing triangle.
+// 4. Print a right-aligned increasing triangle.
+// 5. Print a right-aligned decreasing triangle.
+// 6. Print a hollow square pattern.
+// 7. Print a hollow rectangle pattern.
+// 8. Print a triangle containing increasing numbers.
+// 9. Print a triangle containing decreasing numbers.
+// 10. Print a square pattern where each row alternates between 0 and 1.

@@ -90,3 +90,18 @@ public class Main
 1 2 3 4 5
 max5
 second max4
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Find the frequency of the maximum element in an array.
+// 2. Left rotate an array by one position.
+// 3. Right rotate an array by one position.
+// 4. Find the second largest distinct element.
+// 5. Find the second smallest distinct element.
+// 6. Rotate an array by K positions.
+// 7. Find the maximum difference between two array elements.
+// 8. Move all negative numbers to one side of the array.
+// 9. Find the majority element if it exists.
+// 10. Find the pair of elements whose sum equals a given target.

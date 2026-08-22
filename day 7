@@ -150,3 +150,18 @@ Enter  number: 5
 
 Enter  number: 97
 prime
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Check whether a number is a Strong Number.
+// 2. Check whether a number is an Armstrong Number.
+// 3. Check whether a number is a Perfect Number.
+// 4. Check whether a number is a Neon Number.
+// 5. Check whether a number is a Spy Number.
+// 6. Check whether two numbers are amicable.
+// 7. Check whether a number is a Harshad Number.
+// 8. Check whether a number is a Sunny Number.
+// 9. Print all Armstrong numbers in a given range.
+// 10. Print all perfect numbers in a given range.

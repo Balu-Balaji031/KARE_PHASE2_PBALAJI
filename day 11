@@ -52,3 +52,18 @@ public class Main
 }
 }
 -1 0 2 3 9 12 
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Implement binary search and return the target index.
+// 2. Implement binary search recursively.
+// 3. Find the first occurrence of a target in a sorted array.
+// 4. Find the last occurrence of a target in a sorted array.
+// 5. Count the occurrences of a target using binary search.
+// 6. Implement bubble sort in ascending order.
+// 7. Implement bubble sort in descending order.
+// 8. Optimize bubble sort using a swapped flag.
+// 9. Find the kth smallest element after sorting.
+// 10. Sort an array and remove duplicate values.

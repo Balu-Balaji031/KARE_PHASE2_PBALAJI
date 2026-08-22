@@ -378,3 +378,18 @@ Element not found
 1 2 3 4 5 -1
 5
 it is at index of 5 and 5(target)
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Insert a node at the beginning of a singly linked list.
+// 2. Insert a node at the end of a singly linked list.
+// 3. Insert a node at a given position.
+// 4. Delete the first node of a linked list.
+// 5. Delete the last node of a linked list.
+// 6. Delete a node by its value.
+// 7. Find the length of a linked list.
+// 8. Search for an element in a linked list.
+// 9. Find the sum of all linked-list elements.
+// 10. Reverse a singly linked list.

@@ -215,3 +215,18 @@ public class Day17 {
         circularTraverse(circularHead);
     }
 }
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Reverse a singly linked list iteratively.
+// 2. Find the middle node of a singly linked list.
+// 3. Find the nth node from the end of a singly linked list.
+// 4. Remove duplicate values from a sorted linked list.
+// 5. Merge two sorted singly linked lists.
+// 6. Insert a node into a circular linked list at the beginning.
+// 7. Insert a node into a circular linked list at the end.
+// 8. Delete a node from a circular linked list by value.
+// 9. Search for an element in a circular linked list.
+// 10. Count the number of nodes in a circular linked list.

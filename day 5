@@ -220,3 +220,18 @@ M--MM--M
 M------M
 M------M
 M------M
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Print a centered star pyramid.
+// 2. Print an inverted centered star pyramid.
+// 3. Print a diamond star pattern.
+// 4. Print an inverted diamond pattern.
+// 5. Print a hollow diamond pattern.
+// 6. Print a hollow pyramid with stars.
+// 7. Print a butterfly star pattern.
+// 8. Print a numeric pyramid with increasing values.
+// 9. Print a palindromic number pyramid.
+// 10. Print a 0-1 pyramid pattern.

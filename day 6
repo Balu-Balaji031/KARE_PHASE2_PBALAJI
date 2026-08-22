@@ -164,3 +164,18 @@ public class Main
 
 Enter a number: 55
 1 2 3 4 5 6 7 8 9 11 22 33 44 55 
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Count the number of digits in an integer.
+// 2. Find the sum of all digits of a number.
+// 3. Find the product of all digits of a number.
+// 4. Count the even and odd digits in a number.
+// 5. Count how many digits are prime digits (2, 3, 5, 7).
+// 6. Reverse an integer using arithmetic operations.
+// 7. Check whether an integer is a palindrome.
+// 8. Find the first and last digit of a number.
+// 9. Find the largest digit in a number.
+// 10. Find the smallest digit in a number.

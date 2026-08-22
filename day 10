@@ -493,3 +493,18 @@ public class Main
 }
 anagram
 rgmn31111
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Read and print a 2D matrix.
+// 2. Find the sum of all elements in a matrix.
+// 3. Print the main and secondary diagonals of a square matrix.
+// 4. Find the transpose of a matrix.
+// 5. Find the sum of each row and each column.
+// 6. Find the largest element in a matrix.
+// 7. Count vowels and consonants in a string.
+// 8. Reverse a string without using reverse().
+// 9. Find the frequency of every character in a string.
+// 10. Search for a target in a sorted array using binary search.

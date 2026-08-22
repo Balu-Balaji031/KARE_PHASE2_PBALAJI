@@ -58,3 +58,18 @@ public class Main
     }
 	}
 }
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Create an adjacency matrix for an undirected graph.
+// 2. Create an adjacency list for an undirected graph.
+// 3. Calculate the degree of every vertex.
+// 4. Check whether two vertices are directly connected.
+// 5. Count the number of edges in an undirected graph.
+// 6. Perform Breadth First Search (BFS) from a given vertex.
+// 7. Perform Depth First Search (DFS) from a given vertex.
+// 8. Check whether a path exists between two vertices.
+// 9. Count the connected components of an undirected graph.
+// 10. Detect whether an undirected graph contains a cycle.

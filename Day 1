@@ -101,3 +101,18 @@ public class Main
 	}
 }
 }
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Print a hollow rectangle of stars for R rows and C columns.
+// 2. Print a right-aligned triangle of stars.
+// 3. Print an inverted right-aligned triangle of stars.
+// 4. Print a pyramid pattern of stars.
+// 5. Print an inverted pyramid pattern of stars.
+// 6. Print a diamond pattern of stars.
+// 7. Print a hollow pyramid pattern.
+// 8. Print a number triangle where each row contains the row number.
+// 9. Print a 0-1 checkerboard pattern starting with 0.
+// 10. Print a hollow square with both diagonals.

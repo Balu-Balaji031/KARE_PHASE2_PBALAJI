@@ -333,3 +333,18 @@ public class Main{
 2
 3
 8
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Create a single-inheritance example with Grandfather, Father, and Son.
+// 2. Create a multilevel inheritance program.
+// 3. Create a hierarchical inheritance program with one parent and two children.
+// 4. Demonstrate method inheritance and call inherited methods.
+// 5. Override a parent method in a child class.
+// 6. Use super to call a parent class method.
+// 7. Use super to access a parent class variable.
+// 8. Create a constructor in a parent class and invoke it from a child class.
+// 9. Create a practical inheritance example using Person, Student, and Teacher.
+// 10. Demonstrate runtime method overriding with a parent reference and child object.

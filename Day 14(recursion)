@@ -92,3 +92,18 @@ class Student{
 }
 output:
 21 Gouse
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Find the nth Fibonacci number using recursion.
+// 2. Find the factorial of N using recursion.
+// 3. Find the sum of numbers from 1 to N using recursion.
+// 4. Find the sum of digits of a number using recursion.
+// 5. Reverse a string using recursion.
+// 6. Check whether a string is a palindrome using recursion.
+// 7. Find the power x^n using recursion.
+// 8. Find the greatest common divisor using recursion.
+// 9. Create a parameterized constructor for a Student class.
+// 10. Create a copy constructor and display copied object data.

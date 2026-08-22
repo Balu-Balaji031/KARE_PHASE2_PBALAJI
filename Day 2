@@ -192,3 +192,18 @@ public class Main{
         }
     }
 }
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Check whether a number is positive, negative, or zero using if-else.
+// 2. Find the largest of two numbers using if-else.
+// 3. Find the largest of three numbers using nested if-else.
+// 4. Check whether a year is a leap year.
+// 5. Check whether a character is a vowel or consonant.
+// 6. Check whether a character is uppercase, lowercase, digit, or special character.
+// 7. Check whether a person is eligible to vote and drive based on age.
+// 8. Calculate a grade from marks using else-if conditions.
+// 9. Check whether three sides can form a triangle.
+// 10. Check whether a number is divisible by both 3 and 5.

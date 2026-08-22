@@ -186,3 +186,18 @@ public class Arrreverse{
 5
 0 1 2 3 4
 4 3 2 1 0 
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Find the maximum element in an array.
+// 2. Find the minimum element in an array.
+// 3. Find the sum and average of array elements.
+// 4. Count positive, negative, even, and odd elements in an array.
+// 5. Replace an element at a given index.
+// 6. Search for an element using linear search.
+// 7. Reverse an array in place.
+// 8. Copy all elements from one array to another.
+// 9. Find the number of occurrences of a given value.
+// 10. Print the array elements at even and odd indexes separately.

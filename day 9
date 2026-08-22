@@ -257,3 +257,18 @@ public class Main
 5
 1 4 7 2 8
 8 7
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Find the element that occurs only once when every other element occurs twice.
+// 2. Move all zeroes to the end while preserving the order of non-zero elements.
+// 3. Move all zeroes to the beginning of the array.
+// 4. Find the missing number from 1 to N.
+// 5. Find duplicate elements in an array.
+// 6. Find the intersection of two arrays.
+// 7. Find the union of two arrays without duplicates.
+// 8. Remove duplicate values from an array.
+// 9. Find the first repeating element in an array.
+// 10. Find the first non-repeating element in an array.

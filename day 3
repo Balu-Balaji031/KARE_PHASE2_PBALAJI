@@ -419,3 +419,18 @@ public class Main
 	}
 	
 }
+
+
+// ============================================================
+// 10 ADDITIONAL PRACTICE PROBLEMS
+// ============================================================
+// 1. Create a menu-driven calculator using switch.
+// 2. Print the day of the week for a number 1-7 using switch.
+// 3. Print the month name and number of days using switch.
+// 4. Find whether a number is even or odd using switch.
+// 5. Print numbers from 1 to N using a while loop.
+// 6. Print numbers from N to 1 using a for loop.
+// 7. Find the sum of numbers from 1 to N.
+// 8. Print all even numbers in a given range.
+// 9. Print all odd numbers in a given range.
+// 10. Find the factorial of a number using a loop.
